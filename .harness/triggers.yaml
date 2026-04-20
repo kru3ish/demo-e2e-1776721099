@@ -1,3 +1,4 @@
+# Day-2 E2E test - auto-reconciliation trigger
 triggers:
   - path: "*"
     events: [pr, main]
@@ -5,3 +6,6 @@ triggers:
   - path: "apps/experimental/**"
     events: [pr]
     image_name: demo-e2e-1776721099-experimental
+  - path: "apps/canary/**"
+    events: [pr]
+    image_name: demo-e2e-1776721099-canary
