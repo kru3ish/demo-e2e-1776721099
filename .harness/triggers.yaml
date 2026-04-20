@@ -2,3 +2,6 @@ triggers:
   - path: "*"
     events: [pr, main]
     image_name: demo-e2e-1776721099
+  - path: "apps/experimental/**"
+    events: [pr]
+    image_name: demo-e2e-1776721099-experimental
